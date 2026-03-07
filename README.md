@@ -64,6 +64,13 @@ Elementos incluidos:
 - **filtros interactivos**
 - **interacciones entre gráficos**
 
+## Vista del dashboard
+
+El dashboard interactivo permite explorar la brecha de género en el empleo HRST en Europa mediante análisis temporal, territorial y demográfico.
+
+<p align="center">
+  <img src="assets/dashboard-preview.png" width="900">
+</p>
 ---
 
 # KPIs incluidos
