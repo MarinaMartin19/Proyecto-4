@@ -1,5 +1,5 @@
 <p align="center">
-<img src="chunga-malaje-consulting.png" width="520">
+  <img src="assets/chunga-malaje-consulting.png" width="420">
 </p>
 
 # Brecha de género en empleo HRST en Europa
@@ -14,9 +14,10 @@ Proyecto de análisis y visualización de datos desarrollado en **Tableau** a pa
 Evaluación final del **Módulo 4 – Data Visualization**  
 Bootcamp Data Analytics — **Adalab**
 
-Autores:  
-**Ruth Pérez Segovia**  
-**Marina Martín Díaz**
+**AutorAs**:
+
+ Marina Martín Díaz & Ruth Pérez Segovia  
+
 
 ---
 
@@ -80,6 +81,7 @@ Estos indicadores permiten contextualizar rápidamente el análisis antes de exp
 # Visualizaciones del dashboard
 
 ### Evolución del empleo HRST por sexo
+
 Gráfico de líneas que muestra la evolución temporal de la presencia de mujeres y hombres en el empleo HRST.
 
 Permite identificar tendencias y posibles convergencias o divergencias entre ambos grupos.
@@ -87,13 +89,15 @@ Permite identificar tendencias y posibles convergencias o divergencias entre amb
 ---
 
 ### Brecha relativa por país
-Mapa temático que representa la brecha de género relativa en empleo HRST para cada país europeo.
+
+Mapa coroplético que representa la brecha de género relativa en empleo HRST para cada país europeo.
 
 Facilita detectar patrones geográficos y diferencias territoriales.
 
 ---
 
 ### Países con mayor y menor brecha
+
 Ranking de países que muestra los extremos en la distribución de la brecha de género relativa.
 
 Permite comparar rápidamente qué países presentan mayor desigualdad relativa.
@@ -101,6 +105,7 @@ Permite comparar rápidamente qué países presentan mayor desigualdad relativa.
 ---
 
 ### Desempleo HRST por edad
+
 Gráfico de barras que muestra la distribución del desempleo en HRST por grupos de edad.
 
 Introduce una dimensión demográfica que complementa el análisis de género.
@@ -111,15 +116,15 @@ Introduce una dimensión demográfica que complementa el análisis de género.
 
 El dashboard incluye varios elementos interactivos:
 
-**Filtros**
+### Filtros
 
-- año
-- país
+- Año
+- País
 
-**Interacciones entre visualizaciones**
+### Interacciones entre visualizaciones
 
-- selección en el mapa filtra el ranking
-- selección en el mapa actualiza otras visualizaciones
+- Selección en el mapa filtra el ranking de países
+- Selección en el mapa actualiza el resto de visualizaciones
 
 Esto permite explorar el dataset de forma dinámica y descubrir patrones específicos.
 
@@ -130,13 +135,13 @@ Esto permite explorar el dataset de forma dinámica y descubrir patrones especí
 Los datos proceden de **Eurostat**, utilizando tres datasets principales:
 
 - `hrst_st_nsecsex2`  
-  Empleo en ciencia y tecnología por categoría HRST, actividad económica y sexo.
+Empleo en ciencia y tecnología por categoría HRST, actividad económica y sexo.
 
 - `hrst_st_nunesex`  
-  Personas desempleadas en ciencia y tecnología por categoría y sexo.
+Personas desempleadas en ciencia y tecnología por categoría y sexo.
 
 - `hrst_st_nuneage`  
-  Personas desempleadas en ciencia y tecnología por categoría y grupo de edad.
+Personas desempleadas en ciencia y tecnología por categoría y grupo de edad.
 
 Los datos se descargaron en formato **TSV**.
 
@@ -159,7 +164,7 @@ Campos calculados destacados:
 - brecha de género relativa
 - número de países con dato
 - filtro de países válidos
-- Top/Bottom 10 de brecha
+- Top/Bottom 10 de brecha de género
 
 ---
 
@@ -167,8 +172,21 @@ Campos calculados destacados:
 
 - **Tableau Desktop Public Edition**
 - **Eurostat datasets**
-- **Git / GitHub**
+- **Git**
+- **GitHub**
 
 ---
 
 # Estructura del repositorio
+
+Proyecto-4
+│
+├── README.md
+├── assets
+│   └── chunga-malaje-consulting.png
+├── data
+│   ├── estat_hrst_st_nsecsex2.tsv
+│   ├── estat_hrst_st_nunesex.tsv
+│   └── estat_hrst_st_nuneage.tsv
+└── dashboard
+    └── brecha-genero-hrst-europa.twbx
