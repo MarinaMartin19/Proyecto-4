@@ -1,201 +1,174 @@
 <p align="center">
-  <img src="assets/chunga-malaje-consulting.png" alt="Chunga&Malaje Consulting" width="500"/>
+<img src="chunga-malaje-consulting.png" width="520">
 </p>
 
-# Brecha de género en empleo HRST en Europa  
-### Chunga&Malaje Consulting  
-**Professional_code_RUTH_MARINA**
+# Brecha de género en empleo HRST en Europa
 
-Evaluación final del Módulo 4 — Tableau / Data Visualization
+![Tableau](https://img.shields.io/badge/Tableau-Data%20Visualization-blue)
+![Eurostat](https://img.shields.io/badge/Data-Eurostat-orange)
+![EDA](https://img.shields.io/badge/Analysis-EDA-purple)
+![Dashboard](https://img.shields.io/badge/Dashboard-Interactive-blueviolet)
 
-Realizada por **Ruth Pérez Segovia** y **Marina Martín Díaz**  
-Bootcamp de Data Analytics — Adalab
+Proyecto de análisis y visualización de datos desarrollado en **Tableau** a partir de datos públicos de **Eurostat** para estudiar la **brecha de género en el empleo en ciencia y tecnología (HRST)** en Europa.
 
-Proyecto centrado en análisis, visualización e interactividad para estudiar la brecha de género en empleo HRST en Europa a partir de datos públicos de Eurostat.
+Evaluación final del **Módulo 4 – Data Visualization**  
+Bootcamp Data Analytics — **Adalab**
 
----
-
-## Badges
-**Status:** Finished  
-**Tool:** Tableau Public / Tableau Desktop Public Edition  
-**Data source:** Eurostat  
-**Last updated:** 2026
+Autores:  
+**Ruth Pérez Segovia**  
+**Marina Martín Díaz**
 
 ---
 
-## Descripción
+# Objetivo del análisis
 
-Este repositorio contiene la resolución del proyecto final del **Módulo 4** del Bootcamp de Data Analytics de Adalab, orientado al diseño de un dashboard interactivo en Tableau.
+El objetivo de este proyecto es analizar la **brecha de género en el empleo HRST (Human Resources in Science and Technology)** en Europa y explorar cómo se distribuye en función de:
 
-El proyecto analiza la **brecha de género en el empleo HRST (Human Resources in Science and Technology)** en Europa, combinando varias fuentes de datos extraídas de **Eurostat** para construir una visión temporal, territorial y demográfica del fenómeno.
+- el **sexo**
+- la **evolución temporal**
+- el **país**
+- la **edad**
 
-Se han utilizado tres datasets principales:
-
-- **hrst_st_nsecsex2**: empleo en ciencia y tecnología por categoría HRST, actividad económica (NACE) y sexo.
-- **hrst_st_nunesex**: desempleo en ciencia y tecnología por categoría y sexo.
-- **hrst_st_nuneage**: desempleo en ciencia y tecnología por categoría y edad.
-
-El resultado final es un **dashboard interactivo** que permite analizar la evolución del empleo HRST por sexo, la distribución geográfica de la brecha de género relativa, los países con mejor y peor posición comparada y el comportamiento del desempleo HRST por grupos de edad.
+El análisis se materializa en un **dashboard interactivo** que permite explorar diferencias territoriales, tendencias temporales y patrones demográficos en el empleo científico-tecnológico.
 
 ---
 
-## Objetivo del proyecto
+# Preguntas analíticas
 
-El objetivo principal del proyecto ha sido estudiar la **brecha de género en el empleo HRST en Europa** a través de un dashboard visual e interactivo que permitiera responder, al menos, a estas preguntas de análisis:
+El dashboard está diseñado para responder tres preguntas principales:
 
-1. **¿Cómo evoluciona la presencia de mujeres y hombres en el empleo HRST a lo largo del tiempo?**
-2. **¿Qué países presentan mayor o menor brecha de género relativa?**
-3. **¿Cómo se distribuye el desempleo HRST según el grupo de edad?**
+**1️⃣ ¿Cómo evoluciona el empleo HRST por sexo a lo largo del tiempo?**
 
-Además, el proyecto busca demostrar un flujo de trabajo completo en Tableau: selección de fuentes, limpieza, creación de campos calculados, diseño visual, construcción de interactividad y elaboración de conclusiones orientadas a análisis de datos.
+**2️⃣ ¿Qué países presentan mayor o menor brecha de género relativa?**
 
----
-
-## Selección de datasets y criterio analítico
-
-La primera fase del trabajo consistió en explorar diferentes datasets de Eurostat relacionados con empleo, ciencia y tecnología. Finalmente, se seleccionaron tres fuentes que permitían combinar:
-
-- dimensión **temporal**
-- dimensión **territorial**
-- dimensión de **género**
-- dimensión **demográfica** (edad)
-
-Se descartaron otras tablas complementarias porque añadían complejidad sin mejorar de forma clara la capacidad explicativa del dashboard.
-
-El criterio de selección fue priorizar un análisis **coherente, visualizable y defendible**, frente a la acumulación de muchas fuentes sin una narrativa clara.
+**3️⃣ ¿Cómo se distribuye el desempleo HRST según grupo de edad?**
 
 ---
 
-## Preparación y limpieza de datos
+# Dashboard final
 
-Los datos descargados desde Eurostat requerían una fase previa de transformación antes de poder utilizarse en Tableau.
+El dashboard integra:
 
-### Trabajo realizado:
-
-- Separación de campos agregados en columnas interpretables.
-- Renombrado de variables para hacerlas comprensibles.
-- Limpieza de valores y creación del campo **Valor limpio**.
-- Gestión de valores nulos.
-- Revisión de tipos de datos.
-- Exclusión de agregados supranacionales no comparables como `EU27_2020` o `EA21`.
-- Normalización de nombres de país para mejorar filtros y visualización.
-
-### Campos calculados principales
-
-Se construyeron varios campos calculados clave para el análisis:
-
-- **Porcentaje de mujeres**
-- **Brecha de género relativa**
-- **Número de países con dato**
-- **Es país**
-- **País visual**
-- **País mapa**
-- **TopBottom 10**
-
-Estos cálculos permitieron transformar la información original en indicadores interpretables y comparables entre países y años.
-
----
-
-## Estructura del análisis
-
-### 1️⃣ Fase 1 — Exploración y limpieza
-- Carga de los datasets de Eurostat.
-- Revisión de dimensiones y medidas disponibles.
-- Detección de valores nulos y campos no comparables.
-- Creación de variables limpias y renombradas para Tableau.
-
-### 2️⃣ Fase 2 — Construcción de métricas
-- Diseño de indicadores de presencia femenina y brecha de género relativa.
-- Recuento de países válidos con dato.
-- Depuración de códigos de país y resolución de incidencias en mapas.
-
-### 3️⃣ Fase 3 — Diseño de visualizaciones
-Se construyeron varias visualizaciones y se descartaron algunas versiones intermedias hasta llegar a un dashboard final más claro y legible.
-
-### 4️⃣ Fase 4 — Dashboard interactivo
-Se diseñó un dashboard final con:
 - KPIs principales
-- evolución temporal
-- comparación geográfica
-- ranking de países
-- distribución del desempleo HRST por edad
-- filtro general e interacciones entre visualizaciones
+- evolución temporal del empleo HRST
+- mapa temático por país
+- ranking de brecha de género relativa
+- distribución del desempleo por edad
+- filtros interactivos
+
+Elementos incluidos:
+
+- **3 KPIs**
+- **4 visualizaciones**
+- **filtros interactivos**
+- **interacciones entre gráficos**
 
 ---
 
-## Visualizaciones incluidas en el dashboard
+# KPIs incluidos
 
-### KPIs
-- **% medio de mujeres**
-- **Brecha media**
-- **Países con dato**
+El panel superior resume el estado general del fenómeno mediante tres indicadores:
 
-### Gráficos
-- **Gráfico de líneas:** evolución del empleo HRST por sexo.
-- **Mapa temático por países:** brecha relativa por país.
-- **Ranking de barras:** países con mayor y menor brecha relativa.
-- **Gráfico de barras:** desempleo HRST por grupo de edad.
+- **% medio de mujeres en empleo HRST**
+- **Brecha media relativa**
+- **Número de países con datos disponibles**
+
+Estos indicadores permiten contextualizar rápidamente el análisis antes de explorar las visualizaciones.
 
 ---
 
-## Interactividad
+# Visualizaciones del dashboard
 
-El dashboard incluye:
+### Evolución del empleo HRST por sexo
+Gráfico de líneas que muestra la evolución temporal de la presencia de mujeres y hombres en el empleo HRST.
 
-- **Filtro general de página por año**
-- **Filtro por país**
-- **Interacción funcional entre visualizaciones**
-
-Ejemplos de interacción implementada:
-- selección en el **ranking** para filtrar otras visualizaciones
-- selección en el **mapa** para actualizar análisis relacionados
-
-Esto convierte el dashboard en una herramienta no solo descriptiva, sino también exploratoria.
+Permite identificar tendencias y posibles convergencias o divergencias entre ambos grupos.
 
 ---
 
-## Principales insights
+### Brecha relativa por país
+Mapa temático que representa la brecha de género relativa en empleo HRST para cada país europeo.
 
-Algunos de los hallazgos más relevantes del análisis son:
-
-- La presencia media femenina en el empleo HRST se sitúa en torno al **49,6 %** en la configuración actual del dashboard.
-- La **brecha media relativa** muestra un valor negativo, lo que indica una desigualdad persistente en el conjunto analizado.
-- La distribución territorial de la brecha no es homogénea: algunos países presentan mejores resultados relativos que otros.
-- El desempleo HRST presenta diferencias entre grupos de edad, lo que sugiere la conveniencia de incorporar una lectura demográfica al análisis de género.
+Facilita detectar patrones geográficos y diferencias territoriales.
 
 ---
 
-## Recomendaciones
+### Países con mayor y menor brecha
+Ranking de países que muestra los extremos en la distribución de la brecha de género relativa.
 
-A partir del análisis realizado, proponemos:
-
-- profundizar en el estudio de los países con mejores resultados relativos para detectar posibles buenas prácticas;
-- incorporar en fases posteriores un análisis más detallado por sectores NACE;
-- analizar conjuntamente la dimensión de género y la de edad en políticas de empleo y formación;
-- seguir monitorizando la evolución temporal para identificar mejoras o retrocesos en la brecha.
+Permite comparar rápidamente qué países presentan mayor desigualdad relativa.
 
 ---
 
-## Tecnologías utilizadas
+### Desempleo HRST por edad
+Gráfico de barras que muestra la distribución del desempleo en HRST por grupos de edad.
 
-- **Tableau Public / Tableau Desktop Public Edition**
-- **Eurostat** como fuente de datos principal
-- **Git y GitHub** para control de versiones y entrega
-- Trabajo complementario de limpieza, organización y documentación del proceso analítico
+Introduce una dimensión demográfica que complementa el análisis de género.
 
 ---
 
-## Estructura del repositorio
+# Interactividad
 
-```bash
-├── data/
-│   ├── estat_hrst_st_nsecsex2.tsv
-│   ├── estat_hrst_st_nunesex.tsv
-│   └── estat_hrst_st_nuneage.tsv
-├── assets/
-│   └── chunga-malaje-consulting.png
-├── dashboard/
-│   └── Brecha_genero_HRST_Europa_FINAL.twbx
-├── docs/
-│   └── informe_proyecto_modulo4.pdf
-└── README.md
+El dashboard incluye varios elementos interactivos:
+
+**Filtros**
+
+- año
+- país
+
+**Interacciones entre visualizaciones**
+
+- selección en el mapa filtra el ranking
+- selección en el mapa actualiza otras visualizaciones
+
+Esto permite explorar el dataset de forma dinámica y descubrir patrones específicos.
+
+---
+
+# Fuentes de datos
+
+Los datos proceden de **Eurostat**, utilizando tres datasets principales:
+
+- `hrst_st_nsecsex2`  
+  Empleo en ciencia y tecnología por categoría HRST, actividad económica y sexo.
+
+- `hrst_st_nunesex`  
+  Personas desempleadas en ciencia y tecnología por categoría y sexo.
+
+- `hrst_st_nuneage`  
+  Personas desempleadas en ciencia y tecnología por categoría y grupo de edad.
+
+Los datos se descargaron en formato **TSV**.
+
+---
+
+# Preparación y transformación de datos
+
+Durante el proceso de preparación se realizaron varias tareas:
+
+- limpieza de valores nulos
+- normalización de tipos de dato
+- creación de campos calculados
+- filtrado de agregados supranacionales
+- normalización de nombres de países
+- preparación de variables para visualización
+
+Campos calculados destacados:
+
+- porcentaje de mujeres
+- brecha de género relativa
+- número de países con dato
+- filtro de países válidos
+- Top/Bottom 10 de brecha
+
+---
+
+# Tecnologías utilizadas
+
+- **Tableau Desktop Public Edition**
+- **Eurostat datasets**
+- **Git / GitHub**
+
+---
+
+# Estructura del repositorio
