@@ -14,11 +14,17 @@ Proyecto de análisis y visualización de datos desarrollado en **Tableau** a pa
 Evaluación final del **Módulo 4 – Data Visualization**  
 Bootcamp Data Analytics — **Adalab**
 
-**AutorAs**:
+## Autoras  
+*por la igualdad de género y el cierre de la brecha digital*
 
- Marina Martín Díaz & Ruth Pérez Segovia  
+<p align="center">
 
+**Marina Martín Díaz**  
+✦  
 
+**Ruth Pérez Segovia**
+
+</p>
 ---
 
 # Objetivo del análisis
@@ -46,42 +52,59 @@ El dashboard está diseñado para responder tres preguntas principales:
 
 ---
 
-# Dashboard final
+# Dashboard preview
 
-El dashboard integra:
-
-- KPIs principales
-- evolución temporal del empleo HRST
-- mapa temático por país
-- ranking de brecha de género relativa
-- distribución del desempleo por edad
-- filtros interactivos
-
-Elementos incluidos:
-
-- **3 KPIs**
-- **4 visualizaciones**
-- **filtros interactivos**
-- **interacciones entre gráficos**
-
-## Vista del dashboard
-
-El dashboard interactivo permite explorar la brecha de género en el empleo HRST en Europa mediante análisis temporal, territorial y demográfico.
+El dashboard interactivo integra análisis temporal, territorial y demográfico de la brecha de género en empleo HRST.
 
 <p align="center">
   <img src="assets/dashboard-preview.png" width="900">
 </p>
+
+---
+
+# Key Insights
+
+### Participación femenina cercana al equilibrio
+
+El porcentaje medio de mujeres en empleo HRST se sitúa aproximadamente en torno al **50 %**, lo que indica un nivel de participación cercano al equilibrio global entre hombres y mujeres.
+
+Sin embargo, este equilibrio agregado oculta **importantes diferencias entre países**.
+
+---
+
+### Desigualdad territorial significativa
+
+El análisis geográfico muestra que la brecha de género **no se distribuye de forma homogénea en Europa**.
+
+Algunos países presentan niveles de participación femenina relativamente altos, mientras que otros muestran **brechas negativas persistentes**, lo que sugiere diferencias estructurales en políticas educativas, mercado laboral o cultura tecnológica.
+
+---
+
+### Persistencia de la brecha relativa
+
+Aunque la participación femenina ha mejorado en términos absolutos, el análisis comparativo indica que **la brecha relativa sigue presente en muchos contextos**, especialmente en determinados sistemas productivos.
+
+Esto sugiere que el crecimiento del empleo HRST no necesariamente implica una reducción automática de la desigualdad.
+
+---
+
+### Diferencias demográficas en el desempleo HRST
+
+El análisis por grupos de edad muestra que el desempleo en el sector no afecta de forma uniforme a todos los perfiles demográficos.
+
+Esto sugiere que las dinámicas de entrada y permanencia en el sector tecnológico pueden estar influidas por factores como experiencia laboral, formación o ciclos de carrera.
+
 ---
 
 # KPIs incluidos
 
-El panel superior resume el estado general del fenómeno mediante tres indicadores:
+El panel superior del dashboard resume la situación mediante tres indicadores clave:
 
 - **% medio de mujeres en empleo HRST**
 - **Brecha media relativa**
 - **Número de países con datos disponibles**
 
-Estos indicadores permiten contextualizar rápidamente el análisis antes de explorar las visualizaciones.
+Estos indicadores proporcionan una visión rápida del estado general antes de explorar las visualizaciones en detalle.
 
 ---
 
@@ -121,7 +144,7 @@ Introduce una dimensión demográfica que complementa el análisis de género.
 
 # Interactividad
 
-El dashboard incluye varios elementos interactivos:
+El dashboard incluye varios elementos interactivos que permiten explorar el dataset de forma dinámica.
 
 ### Filtros
 
@@ -133,7 +156,7 @@ El dashboard incluye varios elementos interactivos:
 - Selección en el mapa filtra el ranking de países
 - Selección en el mapa actualiza el resto de visualizaciones
 
-Esto permite explorar el dataset de forma dinámica y descubrir patrones específicos.
+Esto permite analizar patrones específicos dentro de cada país o periodo temporal.
 
 ---
 
@@ -165,7 +188,7 @@ Durante el proceso de preparación se realizaron varias tareas:
 - normalización de nombres de países
 - preparación de variables para visualización
 
-Campos calculados destacados:
+Campos calculados principales:
 
 - porcentaje de mujeres
 - brecha de género relativa
@@ -177,10 +200,10 @@ Campos calculados destacados:
 
 # Tecnologías utilizadas
 
-- **Tableau Desktop Public Edition**
-- **Eurostat datasets**
-- **Git**
-- **GitHub**
+- Tableau Desktop Public Edition
+- Eurostat datasets
+- Git
+- GitHub
 
 ---
 
@@ -200,3 +223,34 @@ Proyecto-4
 │   └── estat_hrst_st_nuneage.tsv
 │
 └── Brecha_genero_HRST_Europa_Marina_Ruth.twbx
+
+
+
+---
+
+# Equipo del proyecto
+
+Consultoras de datos especializadas en análisis de desigualdades estructurales y visualización de datos.
+
+<p align="center">
+  <img src="assets/Chunga_malaje_2-removebg-preview.png" width="450">
+</p>
+
+
+**Marina Martín Díaz**  
+Data Analyst  
+
+**Ruth Pérez Segovia**  
+Data Analyst  
+
+
+
+---
+
+# Conclusión
+
+El análisis muestra que, aunque la participación femenina en el empleo HRST ha aumentado en Europa, persisten diferencias significativas entre países.
+
+El dashboard permite explorar estas diferencias desde múltiples perspectivas, combinando análisis temporal, territorial y demográfico.
+
+Este enfoque facilita la identificación de patrones estructurales en la brecha de género dentro de los sectores científicos y tecnológicos.
